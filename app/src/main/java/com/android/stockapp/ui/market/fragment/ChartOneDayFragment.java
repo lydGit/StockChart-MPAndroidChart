@@ -27,9 +27,9 @@ import butterknife.Unbinder;
  */
 public class ChartOneDayFragment extends BaseFragment {
 
-    @BindView(R.id.chart)
+//    @BindView(R.id.chart)
     OneDayChart chart;
-    Unbinder unbinder;
+//    Unbinder unbinder;
 
     private boolean land;//是否横屏
     private TimeDataManage kTimeData = new TimeDataManage();
@@ -51,6 +51,7 @@ public class ChartOneDayFragment extends BaseFragment {
 
     @Override
     public void initBase(View view) {
+        chart = view.findViewById(R.id.chart);
         //初始化
         chart.initChart(land);
         //测试数据
@@ -100,13 +101,13 @@ public class ChartOneDayFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // TODO: inflate a fragment view
         View rootView = super.onCreateView(inflater, container, savedInstanceState);
-        unbinder = ButterKnife.bind(this, rootView);
+//        unbinder = ButterKnife.bind(this, rootView);
         return rootView;
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        unbinder.unbind();
+//        unbinder.unbind();
     }
 }

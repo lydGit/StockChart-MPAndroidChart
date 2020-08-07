@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat;
 
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -86,7 +87,11 @@ public class FiveDayChart extends BaseChart {
     public FiveDayChart(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
-        LayoutInflater.from(context).inflate(R.layout.view_time, this);
+        try {
+            LayoutInflater.from(context).inflate(R.layout.view_time, this);
+        }catch (Exception e){
+            Log.e("lyd"," LayoutInflater "+e.toString());
+        }
         lineChart = (TimeLineChart) findViewById(R.id.line_chart);
         barChart = (TimeBarChart) findViewById(R.id.bar_chart);
         cirCleView = (FrameLayout) findViewById(R.id.circle_frame_time);
