@@ -88,6 +88,7 @@ public class FiveDayChart extends BaseChart {
         super(context, attrs);
         mContext = context;
         try {
+            Log.e("lyd"," LayoutInflater "+R.layout.view_time);
             LayoutInflater.from(context).inflate(R.layout.view_time, this);
         }catch (Exception e){
             Log.e("lyd"," LayoutInflater "+e.toString());
