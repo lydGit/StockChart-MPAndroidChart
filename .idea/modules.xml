@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MPChartLib/StockChart-MPAndroidChart-MPChartLib.iml" filepath="$PROJECT_DIR$/.idea/modules/MPChartLib/StockChart-MPAndroidChart-MPChartLib.iml" group="StockChart-MPAndroidChart/MPChartLib" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/StockChart-MPAndroidChart-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/StockChart-MPAndroidChart-app.iml" group="StockChart-MPAndroidChart/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_test/module_test.iml" filepath="$PROJECT_DIR$/.idea/modules/module_test/module_test.iml" group="StockChart-MPAndroidChart/module_test" />
       <module fileurl="file://$PROJECT_DIR$/rxeasyhttp/rxeasyhttp.iml" filepath="$PROJECT_DIR$/rxeasyhttp/rxeasyhttp.iml" />
     </modules>
   </component>
