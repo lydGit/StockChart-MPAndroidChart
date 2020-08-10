@@ -1,1 +1,2 @@
+include ':module_test'
 include ':app',':MPChartLib'
